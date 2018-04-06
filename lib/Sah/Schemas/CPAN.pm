@@ -1,4 +1,4 @@
-package Sah::Schemas::CPANMeta;
+package Sah::Schemas::CPAN;
 
 1;
 # ABSTRACT: Sah schemas related to CPAN
