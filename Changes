@@ -1,3 +1,8 @@
+0.005   2019-11-29  Released-By: PERLANCAR; Urgency: medium
+
+	- Update coerce rule names (Data::Sah::Coerce 0.034+).
+
+
 0.004   2019-01-13  Released-By: PERLANCAR
 
 	- Add completion for cpan::pause_id.
