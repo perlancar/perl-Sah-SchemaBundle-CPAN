@@ -5,7 +5,15 @@ package Sah::Schema::cpan::pause_id;
 # DIST
 # VERSION
 
-# CODE: require Data::Dmp; require Regexp::Pattern::CPAN; my $schema = ["str", {summary=>"PAUSE author ID", match=>$Regexp::Pattern::CPAN::RE{pause_id}{pat}, 'x.perl.coerce_rules'=>['From_str::to_upper'], 'x.completion'=>['lcpan_authorid']}, {}]; print "our \$schema = ", Data::Dmp::dmp($schema), ";\n";
+use strict;
+use Regexp::Pattern::CPAN;
+
+our $schema = ["str", {
+    summary=>"PAUSE author ID",
+    match=>$Regexp::Pattern::CPAN::RE{pause_id}{pat},
+    'x.perl.coerce_rules'=>['From_str::to_upper'],
+    'x.completion'=>['lcpan_authorid'],
+}, {}];
 
 1;
 
