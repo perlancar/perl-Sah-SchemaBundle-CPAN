@@ -15,7 +15,7 @@ our $schema = ["str", {
     'x.completion'=>['lcpan_authorid'],
     examples => [
         {value=>'', valid=>0},
-        {value=>'perlancar', valid=>1, res=>'PERLANCAR'},
+        {value=>'perlancar', valid=>1, validated_value=>'PERLANCAR'},
         {value=>'perlancar2', valid=>0, summary=>'Too long'},
     ],
 }, {}];
