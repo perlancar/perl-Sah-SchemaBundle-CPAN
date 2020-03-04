@@ -14,9 +14,9 @@ our $schema = ["str", {
     'x.perl.coerce_rules'=>['From_str::to_upper'],
     'x.completion'=>['lcpan_authorid'],
     examples => [
-        {data=>'', valid=>0},
-        {data=>'perlancar', valid=>1, res=>'PERLANCAR'},
-        {data=>'perlancar2', valid=>0, summary=>'Too long'},
+        {value=>'', valid=>0},
+        {value=>'perlancar', valid=>1, res=>'PERLANCAR'},
+        {value=>'perlancar2', valid=>0, summary=>'Too long'},
     ],
 }, {}];
 
