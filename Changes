@@ -1,3 +1,8 @@
+0.011   2021-01-01  Released-By: PERLANCAR; Urgency: medium
+
+	- Add schemas: cpan::distname, cpan::modname.
+
+
 0.010   2020-03-08  Released-By: PERLANCAR; Urgency: medium
 
         - No functional changes.
