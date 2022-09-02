@@ -1,11 +1,11 @@
 package Sah::Schema::cpan::modname;
 
+use strict;
+
 # AUTHORITY
 # DATE
 # DIST
 # VERSION
-
-use strict;
 
 our $schema = ["perl::modname", {
     description => <<'_',

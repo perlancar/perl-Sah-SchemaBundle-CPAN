@@ -1,12 +1,12 @@
 package Sah::Schema::cpan::pause_id;
 
+use strict;
+use Regexp::Pattern::CPAN;
+
 # AUTHORITY
 # DATE
 # DIST
 # VERSION
-
-use strict;
-use Regexp::Pattern::CPAN;
 
 our $schema = ["str", {
     summary => "PAUSE author ID",

@@ -1,11 +1,11 @@
 package Sah::Schema::cpan::distname;
 
+use strict;
+
 # AUTHORITY
 # DATE
 # DIST
 # VERSION
-
-use strict;
 
 our $schema = ["perl::distname", {
     description => <<'_',
