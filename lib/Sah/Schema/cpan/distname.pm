@@ -8,6 +8,7 @@ use strict;
 # VERSION
 
 our $schema = ["perl::distname", {
+    summary => 'A distribution name on CPAN, e.g. "Module-Installed-Tiny"',
     description => <<'_',
 
 Like perl::distname, but with completion from distribution names on CPAN (using
@@ -20,7 +21,7 @@ _
         {value=>'Foo-Bar' , valid=>1, validated_value=>'Foo-Bar'},
         {value=>'Foo::Bar', valid=>1, validated_value=>'Foo-Bar'},
     ],
-}, {}];
+}];
 
 1;
 
