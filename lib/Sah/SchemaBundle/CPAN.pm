@@ -1,5 +1,5 @@
 ## no critic: TestingAndDebugging::RequireUseStrict
-package Sah::Schemas::CPAN;
+package Sah::SchemaBundle::CPAN;
 
 # during build by perl >= 5.014, Sah::SchemaR::cpan::pause_id will contain sequence (?^...) which is not supported by perl <= 5.012
 use 5.014;
@@ -18,6 +18,6 @@ use strict;
 
 =head1 prepend:SEE ALSO
 
-L<Sah::Schemas::CPANMeta>
+L<Sah::SchemaBundle::CPANMeta>
 
 =cut
