@@ -9,11 +9,15 @@ use strict;
 
 our $schema = ["perl::modname", {
     summary => "A module name on CPAN, e.g. 'Module::Installed::Tiny'",
-    description => <<'_',
+    description => <<'MARKDOWN',
 
-Like perl::modname, but with completion from module names on CPAN (using lcpan).
+This schema can be used to validate a CPAN module name. It's like the
+`perl::modname` schema, but with completion from module names on CPAN (using
+<prog:lcpan>). It does not check whether a CPAN module exists or not (indexed on
+PAUSE); use the `cpan::modname::exists` or `cpan::modname::not_exists` schemas
+for that purpose.
 
-_
+MARKDOWN
     'x.completion'=>['lcpan_modname'],
     examples => [
         {value=>'', valid=>0},

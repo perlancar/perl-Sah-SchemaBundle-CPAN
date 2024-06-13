@@ -9,12 +9,15 @@ use strict;
 
 our $schema = ["perl::distname", {
     summary => 'A distribution name on CPAN, e.g. "Module-Installed-Tiny"',
-    description => <<'_',
+    description => <<'MARKDOWN',
 
-Like perl::distname, but with completion from distribution names on CPAN (using
-lcpan).
+This schema can be used to validate a CPAN distribution name. It's like the
+`perl::distname` schema, but with completion from distribution names on CPAN
+(using <prog:lcpan>). It does not check whether a CPAN distribution exists or
+not (indexed on PAUSE); use the `cpan::distname::exists` or
+`cpan::distname::not_exists` schemas for that purpose.
 
-_
+MARKDOWN
     'x.completion'=>['lcpan_distname'],
     examples => [
         {value=>'', valid=>0},

@@ -15,11 +15,14 @@ our $schema = ["str", {
     'x.perl.coerce_rules'=>['From_str::to_upper'],
     'x.completion'=>['lcpan_authorid'],
 
-    description => <<'_',
+    description => <<'MARKDOWN',
 
-Note that whether the PAUSE ID exists is not checked by this schema.
+This schema can be used to validate a PAUSE ID. It's basically just `str` with
+checks for valid characters and accepted length (2-9 characters). Whether the
+PAUSE ID exists is not checked by this schema; see the `cpan::pause_id::exists`
+and `cpan::pause_id::not_exists` for that purpose.
 
-_
+MARKDOWN
     examples => [
         {value=>'', valid=>0},
         {value=>'perlancar', valid=>1, validated_value=>'PERLANCAR'},
